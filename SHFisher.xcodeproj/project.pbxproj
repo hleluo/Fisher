@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEAA01D51BAFE624000CAA84 /* SHDataAnalyzer.c in Sources */ = {isa = PBXBuildFile; fileRef = AEAA01D31BAFE624000CAA84 /* SHDataAnalyzer.c */; };
 		AEDE73281BABD67200210B7E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AEDE73271BABD67200210B7E /* main.c */; };
+		AEFAB04C1BB2A1A400B4A8A8 /* SHFisher.c in Sources */ = {isa = PBXBuildFile; fileRef = AEFAB04A1BB2A1A400B4A8A8 /* SHFisher.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AEAA01D31BAFE624000CAA84 /* SHDataAnalyzer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SHDataAnalyzer.c; sourceTree = "<group>"; };
+		AEAA01D41BAFE624000CAA84 /* SHDataAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDataAnalyzer.h; sourceTree = "<group>"; };
 		AEDE73241BABD67200210B7E /* SHFisher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SHFisher; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEDE73271BABD67200210B7E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		AEFAB04A1BB2A1A400B4A8A8 /* SHFisher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SHFisher.c; sourceTree = "<group>"; };
+		AEFAB04B1BB2A1A400B4A8A8 /* SHFisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFisher.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				AEDE73271BABD67200210B7E /* main.c */,
+				AEAA01D31BAFE624000CAA84 /* SHDataAnalyzer.c */,
+				AEAA01D41BAFE624000CAA84 /* SHDataAnalyzer.h */,
+				AEFAB04A1BB2A1A400B4A8A8 /* SHFisher.c */,
+				AEFAB04B1BB2A1A400B4A8A8 /* SHFisher.h */,
 			);
 			path = SHFisher;
 			sourceTree = "<group>";
@@ -88,7 +98,7 @@
 		AEDE731C1BABD67200210B7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = twomonkeys;
 				TargetAttributes = {
 					AEDE73231BABD67200210B7E = {
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEDE73281BABD67200210B7E /* main.c in Sources */,
+				AEAA01D51BAFE624000CAA84 /* SHDataAnalyzer.c in Sources */,
+				AEFAB04C1BB2A1A400B4A8A8 /* SHFisher.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +157,8 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu89;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -188,7 +201,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu89;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -235,6 +248,7 @@
 				AEDE732D1BABD67200210B7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
